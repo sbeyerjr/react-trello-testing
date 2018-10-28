@@ -2,6 +2,13 @@ language: node_js
 node_js: node
 cache:
   directories:
-    - node_modules
+  - node_modules
 env:
-  - CI=true
+- CI=true
+deploy:
+  provider: heroku
+  api_key:
+    secure: C0radP5QE352bUeLZA6siMT6QYVw/NsPyg2XYsEvoGIWxWe6VUMCHpsV4gRTtrUfYMosalaZphS6iKkpLYo4Lf7i9FmBogpXQQVbLsu3R05ZJF/+d89A3LE7gbnyi8IAbRiHVBXz0k2JcryM4MBOWs/cekgnroN1KRBKotVnzBOsW6cuIEmD5xQO7nwQ7Q4PVO6HwtRv+9DmhQrRwUpj7H1igpjI7ujG6ifpHWJio5Hm1CSq58UNfI06UPVir+NHXJMGOXYZoxAWvntSRVyw8cl2OON9X1vj8I7PPIRC8qsWG/S6nF5gTCx9+3U5ZfJ31HvdX23puufSqX6QBYUuntM6S0WMFzQsZVWNuW8OvRfYP7YTeQ9oqWF+sXkbc7kOl45kQQ97Azh+TcEc3/sFyUw+wTQMsxy+OnEgx0k0ghvRQEtGZAiAQc0X1jtD7HUG6b5tlzMxlBAwZzxXwJ9YgiXuPjj53iWblsjYkmTYd+uaW+YUu7Dn1zaPwQFLRV8phCsr6hxtycQswbnU6h9hGRaxjKbgNQ1i2HTzH/ON9MknEcUJheucXVQ50LsMf3LI1B5f6JDcFXJQ4f8URM4wTKoD0UhkvOFFT7Z0ICQzh1vtLIZd97QJRn9aSm7OHYEoAvQAvuv6nyleKy3GahaTlqXOTLghmAJSQS8G4Col3lI=
+  app: fast-sea-75465
+  on:
+    repo: sbeyerjr/react-trello-testing
